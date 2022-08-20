@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div>
+                <img src="sweety.jpg" class=" img">
+            </div>
+            <div class="div1"><br><br>
+
+                <h1 class="h1">Big Time</h1><br><br>
+
+                <label type="text" class="label">User Name :</label>
+                <input type="text" class="text" id="username"><br><br><br><br>
+
+                <label type="Password" class="label">Password :</label>
+                <input type="password" class="text" id="password"><br><br><br><br>
+
+                <input type="button" class="button" onclick="abc()" value="login"><br><br><br><br>
+                
+            </div>
+        </div>
+    </form>
+
+    <script>
+    
+    function abc(){
+        var x = document.getElementById("username").value;
+        var y = document.getElementById("password").value;
+
+        if(x == "Akshu" && y == "123"){
+            alert("correct");
+            window.open("Bigtime.html","_self");
+           
+        }
+        else{
+            alert("incorrect");
+        }
+    }
+
+
+
+    </script>
+</body>
+
+</html>
